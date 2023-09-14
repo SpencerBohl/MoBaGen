@@ -6,8 +6,7 @@ Vector2f AlignmentRule::computeForce(const std::vector<Boid*>& neighborhood, Boi
   Vector2f averageVelocity = Vector2f::zero();
   Vector2f totalVelocity = Vector2f::zero();
 
-  // todo: add your code here to align each boid in a neighborhood
-  // hint: iterate over the neighborhood
+  // Iterate over the neighborhood to get average velocity
   if (!neighborhood.empty()) {
     for (int i = 0; i < neighborhood.size(); i++) {
       Vector2f temp = neighborhood[i]->getVelocity();

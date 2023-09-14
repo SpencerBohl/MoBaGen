@@ -15,7 +15,6 @@ Vector2f SeparationRule::computeForce(const std::vector<Boid*>& neighborhood, Bo
   
   // todo: find and apply force only on the closest mates
 
-
   if (!neighborhood.empty()) {
     // Get position of current boid for later and start counting the close flockmates
     Vector2f position = boid->transform.position;
